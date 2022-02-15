@@ -51,16 +51,20 @@ in
         # sfz-prompt
         {
           name = "sfz";
-          src = builtins.fetchGit {
-            url = "https://github.com/teu5us/sfz-prompt.zsh";
+          src = builtins.fetchFromGitHub {
+            owner = "teu5us";
+            repo = "sfz-prompt.zsh";
             rev = "1419b468675c367fa44cd14e1bf86997f2ada5fc";
+            sha256 = "0119yk5h3cdhnxrk5pia2fddqkj51zljis4gfaacfpilcx0xy8l9";
           };
         }
         {
           name = "fzf-tab";
-          src = builtins.fetchGit {
-            url = "https://github.com/Aloxaf/fzf-tab";
+          src = builtins.fetchFromGitHub {
+            owner = "Aloxaf";
+            repo = "fzf-tab";
             rev = "c5c6e1d82910fb24072a10855c03e31ea2c51563";
+            sha256 = "1a3cj5bqply9prr123nnprxmw4g9cm081gcd80h7adk2y0zxgzc7";
           };
         }
       ];
