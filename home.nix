@@ -51,7 +51,7 @@ in
         # sfz-prompt
         {
           name = "sfz";
-          src = builtins.fetchFromGitHub {
+          src = pkgs.fetchFromGitHub {
             owner = "teu5us";
             repo = "sfz-prompt.zsh";
             rev = "1419b468675c367fa44cd14e1bf86997f2ada5fc";
@@ -60,7 +60,7 @@ in
         }
         {
           name = "fzf-tab";
-          src = builtins.fetchFromGitHub {
+          src = pkgs.fetchFromGitHub {
             owner = "Aloxaf";
             repo = "fzf-tab";
             rev = "c5c6e1d82910fb24072a10855c03e31ea2c51563";
