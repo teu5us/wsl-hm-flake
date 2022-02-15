@@ -23,6 +23,8 @@ To install Nix under WSL2, follow the instructions [here](https://nixos.org/down
    ```nix
    ./result/activate
    ```
+   
+   Remove `result` if you do not need it.
 
 5. Remove the nixpkgs channel so it does not mess with the nixpkgs flake being used.
 
