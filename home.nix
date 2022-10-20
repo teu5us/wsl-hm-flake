@@ -14,6 +14,7 @@ let
     grep = "grep --color=auto";
     cat = "bat";
     hm = "home-manager";
+    e = "emacsclient";
   };
 in
 {
@@ -155,7 +156,16 @@ in
     github-cli
     fd
     ripgrep
-    roswell
-    sbcl
+    neovim # for vscode
+    pandoc
+    texlive.combined.scheme-full
+    cargo
+    nix-prefetch-scripts
+    tmux
   ];
+
+  home.file = {
+    ".tmux.conf".source = ./files/tmux.conf;
+    ".tmate.conf".source = ./files/tmate.conf;
+  };
 }
