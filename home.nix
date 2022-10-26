@@ -22,7 +22,7 @@ in
     home-manager.enable = true;
 
     emacs = {
-      enable = true;
+      enable = false;
       package = pkgs.emacs.override { imagemagick = pkgs.imagemagickBig; };
       extraPackages = (epkgs:
         let requiredPackages =
@@ -157,11 +157,12 @@ in
     fd
     ripgrep
     neovim # for vscode
-    pandoc
-    texlive.combined.scheme-full
-    cargo
+    # pandoc
+    # texlive.combined.scheme-full
+    # cargo
     nix-prefetch-scripts
     tmux
+    eternal-terminal
   ];
 
   home.file = {
